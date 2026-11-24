@@ -17,6 +17,7 @@ Le mode d'emploi complet est dans le fichier « Lisez-moi » de l'image disque.
 ## Ce que l'app télécharge et envoie
 
 - À son premier lancement, l'app télécharge chez NVIDIA l'outil qui distingue les voix d'une vidéo et son modèle (115 Mo, une fois). Rien n'est envoyé.
+- Une fois par jour, l'app lit dans ce dépôt quelle est la dernière version, et la propose dans son menu. Rien n'est envoyé, et rien n'est installé sans un clic.
 - Le son ne quitte jamais le Mac. Le texte d'une transcription n'est envoyé à Anthropic que si vous activez vous-même la synthèse par Claude, avec votre propre clé.
 
 ## Enregistrer d'autres personnes
