@@ -14,6 +14,19 @@ Ce dépôt ne contient que les versions à installer. Il faut un Mac à puce App
 
 Le mode d'emploi complet est dans le fichier « Lisez-moi » de l'image disque.
 
+### Si une version plus ancienne était déjà installée
+
+Si l'Enregistreur était déjà sur ce Mac avant la version 1.0.8 (ou compilé sur place), macOS garde ses anciennes autorisations et redemande sans fin celle d'enregistrer l'écran et le son, même si « Enregistreur » paraît activé dans les réglages. À faire une fois : quitter l'app, puis, dans le Terminal :
+
+```bash
+tccutil reset ScreenCapture fr.serviam.enregistreur
+```
+```bash
+tccutil reset Microphone fr.serviam.enregistreur
+```
+
+Rouvrir l'app, cliquer sur les guillemets et accepter les deux demandes. Les mises à jour suivantes, proposées dans le menu, gardent les autorisations.
+
 ## Ce que l'app télécharge et envoie
 
 - À son premier lancement, l'app télécharge chez NVIDIA l'outil qui distingue les voix d'une vidéo et son modèle (115 Mo, une fois). Rien n'est envoyé.
